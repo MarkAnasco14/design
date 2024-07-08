@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+        }
+        .sidebar {
+            background-color: #03153E;
+            color: white;
+            padding: 20px;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar .logo {
+            margin-bottom: 20px;
+        }
+        .sidebar .nav-link {
+            color: white;
+            margin: 10px 0;
+        }
+        .content {
+            flex: 1;
+            padding: 30px;
+        }
+        .toggle-switch, .profile-icon {
+            color: black;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .btn {
+            background-color: #D3D3D3;
+            color: black;
+            border: none;
+        }
+
+        /* hohay */
+
+          .btn-secondary:hover {
+            background-color: #007bff; 
+            border-color: #007bff; 
+            color: white;
+        }
+
+        /* yawa */
+
+        .transparent-button {
+            background-color: transparent;
+            border: 1px solid #ebeae6; 
+            color: #ecca07; 
+            padding: 10px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .transparent-button1 {
+    background-color: transparent;
+    border: 1px solid #ccc; 
+    color: #333; 
+    border-radius: 20px;
+}
+
+.transparent-button1:hover {
+            background-color: #228cf0; 
+            color: white;
+        }
+
+        .transparent-button:hover {
+            background-color: #fa6400; 
+            color: white;
+        }
+
+        #search{
+            border-radius: 20px;
+        }
+       
+       
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <img src="img/Capture.PNG" alt="Benedicto College Logo" class="logo">
+        <a href="#" class="nav-link transparent-button">My Classes</a>
+    </div>
+    <div class="content">
+        <div class="header">
+         
+        </div>
+        <h3>My Classes</h3>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="semester">School Year</label>
+                <select id="semester" class="form-control">
+                    <option>SY 2023 - 2024 </option>
+                    <option>SY 2024 - 2025 </option>
+                </select>
+            </div>
+               <div class="form-group col-md-4">
+                <label for="semester">Semester</label>
+                <select id="semester" class="form-control">
+                    <option>1st Semester</option>
+                    <option>2nd Semester</option>
+                    <option>summer</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="subject">Subjects</label>
+                <select id="subject" class="form-control">
+                    <option>IT311</option>
+                    <option>IT211</option>
+                    <option>IT271</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="search">Search Students</label>
+            <div class="input-group">
+                <input type="text" id="search" class="form-control" placeholder="Search">
+            </div>
+    
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-2">
+                <button class="btn btn-secondary1 btn-block transparent-button1">STUDENTS</button>
+            </div>
+            <div class="form-group col-md-2">
+                <button class="btn btn-secondary1 btn-block transparent-button1">GRADES</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
